@@ -4,7 +4,7 @@ const SingleProduct = ({prod}) => {
      
   return (
     <div> 
-      
+      {prod.name}
     </div>
   )
 }
