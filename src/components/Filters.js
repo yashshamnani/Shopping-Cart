@@ -1,9 +1,13 @@
 import React, { useState } from 'react'
 import { Button } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
+import { CartState } from '../context/Context';
 import Rating from './Rating'
 const Filters = () => {
     const [rate,setRate] = useState(3)
+
+    const { productState,productDispatch} = CartState()
+     console.log("here i am",productState)
   return (
     <div className='filters'>
         <span className='title'>
